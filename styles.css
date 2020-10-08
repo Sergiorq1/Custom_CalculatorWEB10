@@ -1,5 +1,5 @@
 html {
-    background-color:blueviolet;
+    background-color: #FFDAB9;
     height: 100%;
 }
 #container {
@@ -11,14 +11,14 @@ html {
     grid-template-columns: 100px 1fr;
     grid-template-rows: 75px 75px 75px 75px;
     grid-template-areas: 
-    ". bill_amount"
-    ". tip_percentage"
-    ". tip_amount"
-    ". people"
-    ". total_bill"
+    ". years"
+    ". months"
+    ". days"
+    ". days-alive"
+    ". seconds-alive"
     "btn btn";
     margin: 0 auto;
-    border: 20px solid blue;
+    border: 20px solid #add8e6;
     padding: 25px;
 }
 .tag {
@@ -27,20 +27,20 @@ html {
     font-size: x-large;
 }
 
-#bill_amount {
-    grid-area: bill_amount;
+#years {
+    grid-area: years;
 }
-#tip_percentage{
-    grid-area: tip_percentage;
+#months{
+    grid-area: months;
 }
-#tip_amount{
-    grid-area: tip_amount;
+#days{
+    grid-area: days;
 }
-#people{
-    grid-area: people;
+#days-alive{
+    grid-area: days-alive;
 }
-#total_bill{
-    grid-area: total_bill;
+#seconds-alive{
+    grid-area: seconds-alive;
 }
 .input-styling {
     height: 25px;
@@ -51,4 +51,10 @@ html {
     grid-area: btn;
     height: 25px;
     width: auto;
+    border-radius: 12px;
+    border: 2px solid #add8e6;
+}
+h1{
+    display: flex;
+    justify-content: center;
 }
